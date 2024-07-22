@@ -2,6 +2,9 @@
   "expo": {
     "name": "another-trial",
     "slug": "another-trial",
+    "experiments": {
+      "typedRoutes": true
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,16 +15,28 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muhammdlubbil.anothertrial"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.muhammdlubbil.anothertrial"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c9328fe8-97c0-4644-9119-e803dc493a36"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+      
+    ]
   }
 }

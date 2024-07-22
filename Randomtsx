@@ -1,0 +1,1 @@
+transform: [{ translateY: -Dimensions.get('window').width * 0.15 }],
